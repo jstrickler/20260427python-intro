@@ -3,6 +3,7 @@ fruits = ['pomegranate', 'cherry', 'apricot', 'apple',
 'papaya', 'fig', 'pear', 'banana', 'tamarind', 'persimmon',
 'elderberry', 'peach', 'blueberry', 'lychee', 'grape', 'date' ]
 
+
 print(f"{fruits = }\n")
 
 print(f"{fruits[0] = }\n")  # first element, not a slice
@@ -21,3 +22,6 @@ print(f"{fruits[-5:] = }\n") # last 5 elements (index -5, -4, ...)
 
 print(f"{fruits[1:-1] = }\n")  # all but first and last
 print(f"{fruits[:-10] = }\n")  # all but last 10
+
+print(fruits[-22], fruits[21])
+print(fruits[0], fruits[-1])

@@ -14,6 +14,10 @@ print(f"cities: {cities}\n")
 
 more_cities = ["Detroit", "Des Moines"]
 cities.extend(more_cities)
+# for x in more_cities:
+#      cities.append(x)
+# NOT
+# cities.append(more_cities)
 print(f"cities: {cities}\n")
 
 # LIST.append(obj) LIST.insert(idx, obj) LIST.extend(iterable)

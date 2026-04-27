@@ -16,3 +16,5 @@ print()
 # any expression is OK
 print(f"2 + 2 is {2 + 2}")
 
+print("\u2614")
+

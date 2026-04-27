@@ -16,3 +16,9 @@ list_a = [1, 2, 3]
 list_b = [4, 5, 6]
 list_c = list_a + list_b
 print(f"{list_c = }")
+
+print("-" * 60)
+print(['a', 'b', 'c'] * 5)
+
+flags = [0] * 25
+print(f"{flags = }")

@@ -4,4 +4,6 @@ fruits = ['pomegranate', 'cherry', 'apricot', 'apple',
 for fruit in fruits:
     print(fruit)
 print()
-
+print()
+for ch in 'abcd':
+    print(ch)

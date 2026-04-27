@@ -1,8 +1,17 @@
 print("Welcome to ticket sales\n")
 
+
+i = 0
+while i < 3:
+    print(i)
+    i += 1  # i = i + 1
+print("-" * 60)
+
+
 while True:  # Loop "forever"
     raw_quantity = input("Enter quantity to purchase (or q to quit): ")
     if raw_quantity == '':
+        print("Please enter # of tickets")
         continue  # Skip rest of loop; start back at top
     if raw_quantity.lower() == 'q':
         print("goodbye!")
