@@ -5,7 +5,7 @@ total = 0
 for x, y in numpairs:
     try:
         quotient = x / y
-    except Exception as err:
+    except ZeroDivisionError as err:
         print(f"{err}: x = {x} y = {y}")
     else:
         total += quotient  # Only if no exceptions were raised

@@ -12,6 +12,8 @@ with open(DATA_FILE) as codes_in:
         code = line[:3]  # first three chars
         airport = line[4:]  # fourth char through end
         AIRPORT_CODES[code] = airport
+                      
+print(f"{len(AIRPORT_CODES) = }")
 
 while True:
     code = input("Enter airport code: ")
@@ -21,7 +23,12 @@ while True:
     if code == 'q':
         print("goodbye")
         break
-    
+    if len(code) != 3:
+        print("Code must be 3 letters")
+        continue
+    if not code.isalpha():
+        print("Code must consist only of letters")
+        continue
     # use code.upper() so user can type in lower or upper
     city = AIRPORT_CODES.get(code.upper(), "NOT FOUND")
     print(city)

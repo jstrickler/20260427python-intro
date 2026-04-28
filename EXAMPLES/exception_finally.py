@@ -19,3 +19,17 @@ except TypeError as err:
     print("Caught exception:", err)
 finally:
     print("Still don't care whether we had an exception")
+
+
+import sqlite3
+
+try:
+    conn = None
+    conn = sqlite3.connect('my.db')
+except sqlite3.DatabaseError as dberr:
+    print(dberr)
+else:
+    pass  # query database
+finally:
+    if conn:
+        conn.close()

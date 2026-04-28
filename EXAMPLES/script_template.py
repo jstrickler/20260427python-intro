@@ -8,7 +8,7 @@ import sys
 # constants (AKA global variables -- keep these to a minimum)
 
 # main function
-def main(args):
+def coca_cola(args):
     """
     This is the docstring for the main() function
 
@@ -26,5 +26,5 @@ def function1():
     """
     print("this is function1()")
 
-if __name__ == '__main__':
-    main(sys.argv[1:])  # Pass command line args (minus script name) to main()
+if __name__ == '__main__':   # if this file is run directly as 'python filename.py'
+    coca_cola(sys.argv[1:])  # Pass command line args (minus script name) to main()

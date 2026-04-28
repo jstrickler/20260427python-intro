@@ -1,4 +1,4 @@
-data1 = ['red', 'blue', 'green', 'purple', 'green']  # create literal set
+data1 = ['red', 'blue', 'green', 'purple', 'green']  # create lists
 data2 = ['green', 'blue', 'yellow', 'orange']
 
 set1 = set(data1)
@@ -7,6 +7,11 @@ set2 = set(data2)
 # add elements to set (ignored if already in set)
 set1.add('taupe')  
 set2.add('blue')
+set2.add('black')
+set2.add('black')
+set2.add('black')
+set2.add('black')
+set2.add('black')
 set2.add('black')
 
 print(f"{set1 = }")
@@ -25,4 +30,4 @@ print(f"{food = }")
 print()
 
 unique_food = set(food)  # Create set from iterable (e.g., list)
-print(f"{unique_food = }")
+print(f"{sorted(unique_food) = }")
